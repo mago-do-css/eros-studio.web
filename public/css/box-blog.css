@@ -1,0 +1,28 @@
+.container-box{ 
+    flex-wrap: wrap;  
+}
+.box-blog{
+    width: 30%;
+    height: 100%; 
+    justify-content: start;
+    gap: 1rem;  
+    margin-bottom: 40px;
+}
+.box-blog > div {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 530px;
+    background-repeat: no-repeat;
+}
+.box-blog h3{
+    font-family: 'Articulat-Thin';
+    font-size: 32px;
+} 
+.box-blog{
+    font-family: 'Articulat-Light';
+    letter-spacing: 0.8px;
+}
+.box-blog p{
+    font-size: 20px;
+}

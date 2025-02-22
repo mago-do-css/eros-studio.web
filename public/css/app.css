@@ -1,3 +1,24 @@
+/* global */
+@font-face {
+    font-family: 'Articulat-Regular';
+    src: url('../fonts/ArticulatCF-Normal.otf');
+}
+@font-face {
+    font-family: 'Articulat-Bold';
+    src: url('../fonts/ArticulatCF-Bold.otf');
+}
+@font-face {
+    font-family: 'Articulat-SemiBold';
+    src: url('../fonts/ArticulatCF-DemiBold.otf');
+}
+@font-face {
+    font-family: 'Articulat-Light';
+    src: url('../fonts/ArticulatCF-Light.otf');
+}
+@font-face {
+    font-family: 'Articulat-Thin';
+    src: url('../fonts/ArticulatCF-Thin.otf');
+}
 *{
     padding: 0;
     margin: 0;
@@ -10,13 +31,16 @@
 .flex{
     display: flex;
 }
+.flex-col{
+    flex-direction: column;
+}
 .justify-between{
     justify-content: space-between;
 }
 .justify-center{
     justify-content: center;
 }
-.align-center{
+.items-center{
     align-items: center;
 }
 .block{
@@ -25,6 +49,80 @@
 .text-center{
     text-align: center;
 }
-footer{  
+
+h1{
+    font-family: 'Articulat-Light';  
+    font-size: 60px;
+    margin: 3rem 0;
+}
+a{
+    font-family: 'Articulat-Light';  
+    color: black; 
+}
+a:hover{
+    text-decoration:underline;
+}
+
+ 
+.section-width{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section-black{
+    background-color: black;
+    padding: 5rem 0;
+    color: white;
+}
+/* end global */
+header{ 
+    position: fixed;
+    background: linear-gradient(
+        360deg,
+        rgba(246, 246, 246, 0.269),
+        rgba(182, 182, 182, 0.247)
+    );
+    backdrop-filter: blur(6px); 
+    padding: 2rem 0; 
     width: 100%;
+    top: 0;
+    border-bottom: 3px solid black;
+}
+header svg{
+   width: 160px;
+}
+main{
+    margin-top: 19rem;
+}
+header > div{ 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+footer{   
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+footer > div:nth-child(2){ 
+    gap: 1rem; 
+}
+footer h3{
+    font-family: 'Articulat-Light';  
+}
+.span-footer{
+    font-size: 150px;
+    font-family: 'Articulat-Light';  
+} 
+.my-3{
+margin: 3rem 0;
+}
+/* link underline */
+.link-underline{
+    text-decoration: underline;
+    font-size: 25px;
+    transition: 0.2s;   
+}
+.link-underline:hover{
+    transition: 0.2s;
+    font-family: 'Articulat-Regular'; 
+    letter-spacing: 1.1px; 
 }
