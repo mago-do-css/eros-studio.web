@@ -1,3 +1,44 @@
-.section-black{
-    background-color: black;
+.brand-container h1{
+color: #5D5D5D;
 }
+
+.brand-box-container {
+    display: flex;
+  }
+  
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 200px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .sidebar li.active {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .content {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+  }
+  
+  .section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: opacity 0.5s;
+  }

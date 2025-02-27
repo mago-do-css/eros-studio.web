@@ -19,6 +19,10 @@
     font-family: 'Articulat-Thin';
     src: url('../fonts/ArticulatCF-Thin.otf');
 }
+@font-face {
+    font-family: 'BergenMono-Regular';
+    src: url('../fonts/BergenMono-Regular.otf');
+}
 *{
     padding: 0;
     margin: 0;
@@ -48,6 +52,9 @@
 }
 .text-center{
     text-align: center;
+}
+.text-uppercase{
+    text-transform: uppercase;
 }
 
 h1{
@@ -91,11 +98,14 @@ header svg{
    width: 160px;
 }
 main{
-    margin-top: 19rem;
+    padding-top: 108px;
 }
 header > div{ 
     max-width: 1200px;
     margin: 0 auto;
+}
+p{
+    font-family: 'Articulat-Light';  
 }
 footer{   
     max-width: 1200px;
@@ -105,7 +115,11 @@ footer{
 footer > div:nth-child(2){ 
     gap: 1rem; 
 }
+footer a{
+    font-size: 25px;
+}
 footer h3{
+ font-size: 30px;
     font-family: 'Articulat-Light';  
 }
 .span-footer{
@@ -115,6 +129,12 @@ footer h3{
 .my-3{
 margin: 3rem 0;
 }
+
+.bergenmono-regular{
+font-family: 'BergenMono-Regular';
+
+font-size: 30px;
+}
 /* link underline */
 .link-underline{
     text-decoration: underline;
@@ -123,6 +143,9 @@ margin: 3rem 0;
 }
 .link-underline:hover{
     transition: 0.2s;
-    font-family: 'Articulat-Regular'; 
-    letter-spacing: 1.1px; 
+    font-family: 'Articulat-Regular';  
+} 
+.section-black{
+    background-color: black;
 }
+/* end */
